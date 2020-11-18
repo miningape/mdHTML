@@ -105,7 +105,7 @@ So basically, just dont have 2 literals or links.
 The `"literal text"` is __ALWAYS__ added after the `(link)` in the order of the webpage. So a function defined in a file can be invoked with the literal text.
 
 ## So what is the difference between header, js, css and footer?
-These tags affect where the code is placed. (well no shit but what does that mean?)
+These tags affect where the code is placed. (no shit but what does that mean?)
 
 * The `header>` and `footer>` tags are literal inserts into the html. They aren't wrapped inside any tags, so you are gonna need to define your own.
     * `header>` is added inside the <head> html tags </head>
@@ -116,3 +116,18 @@ These tags affect where the code is placed. (well no shit but what does that mea
     
 This behaviour lets you add a anything before your actual code. This means that if you depend on a library (for example p5js), you can insert it into the 
 page via cdn, or some other code.
+
+## anchor <> Tags 
+This part really isnt built yet, but here it is.
+
+Basically tags like this 
+```
+<footer> "p5 cdn link or something"
+```
+Affect every webpage rather than the one you are below. So they can be inserted anywhere in the code. This also means the list of tags you can use is more extensive
+and it affects the compiling environment rather than an individual page. List of possible tags (these "special" tags can only be used with "" tags):
+```
+<theme> can be set to "Dark", "Light", "Lol", "Wiki"
+<name> affects the main name displayed on the page 
+<my nama jeff> is to open a brainfuck environment in the terminal that can be run with
+```
